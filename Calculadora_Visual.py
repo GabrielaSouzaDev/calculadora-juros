@@ -13,70 +13,84 @@ app.iconbitmap("assets/ico/calculadora.ico")
 app.resizable(False, False) # impedir que o usuário redimensione a janela
 
 # Lógica da calculadora
+def calcular():
+    valorInvestido = float(valorInicial_entrada.get())
+    taxaJuros = float(taxaJuros_entrada.get())
+    periodo = int(periodo_entrada.get())
+
+    jurosSimples = valorInvestido * (taxaJuros / 100) * periodo
+    valorFinal = valorInvestido + jurosSimples
+
+    resultado.configure(text=(
+        f'Valor Investido: R${valorInvestido:.2f}\n'
+        f'Juros: R${jurosSimples:.2f}\n'
+        f'Valor Final: R${valorFinal:.2f}'
+        ))
+
 
 # Configurações dos elementos da interface
 # Titulo da calculadora
-label_title = ctk.CTkLabel(app, 
+titulo1 = ctk.CTkLabel(app, 
                            text="Calculadora",
                            font=('Arial', 50, 'bold'),
                            text_color="#0F0F0F",
                            )
-label_title.pack(pady=(40, 0))
+titulo1.pack(pady=(40, 0))
 
-label_title2 = ctk.CTkLabel(app,
+titulo2 = ctk.CTkLabel(app,
                             text="Juros Simples",
                             font=('Arial', 40, 'bold'),
                             text_color="#43A27D")
-label_title2.pack(pady=(0, 30))
+titulo2.pack(pady=(0, 30))
 
 # Elementos de entrada de dados
 # Valor Inicial
-valorInicial_label = ctk.CTkLabel(app, 
+valorInicial_titulo = ctk.CTkLabel(app, 
                                   text="Valor Inicial", 
                                   font=('Arial', 30),
                                   text_color="#0F0F0F",)
-valorInicial_label.pack(pady=20)
+valorInicial_titulo.pack(pady=20)
 
-valorInicial_entry = ctk.CTkEntry(app,
+valorInicial_entrada = ctk.CTkEntry(app,
                                   placeholder_text="R$ 0,00",
                                   font=('Arial', 30),
                                   width=250,
                                   height=50,
                                   )
-valorInicial_entry.pack(pady=20)
+valorInicial_entrada.pack(pady=20)
 
 # Taxa de Juros
-taxaJuros_label = ctk.CTkLabel(app,
+taxaJuros_titulo = ctk.CTkLabel(app,
                                text="Taxa de Juros (%)",
                                font=('Arial', 30),
                                text_color="#0F0F0F")
-taxaJuros_label.pack(pady=20)
+taxaJuros_titulo.pack(pady=20)
 
-taxaJuros_entry = ctk.CTkEntry(app,
+taxaJuros_entrada = ctk.CTkEntry(app,
                                placeholder_text="0,00",
                                font=('Arial', 30),
                                width=250,
                                height=50)
-taxaJuros_entry.pack(pady=20)
+taxaJuros_entrada.pack(pady=20)
 
 # Período
-periodo_label = ctk.CTkLabel(app,
+periodo_titulo = ctk.CTkLabel(app,
                             text="Período (meses)",
                             font=('Arial', 30),
                             text_color="#0F0F0F")
-periodo_label.pack(pady=20)
+periodo_titulo.pack(pady=20)
 
-periodo_entry = ctk.CTkEntry(app,
+periodo_entrada = ctk.CTkEntry(app,
                             placeholder_text="0",
                             font=('Arial', 30),
                             width=250,
                             height=50)
-periodo_entry.pack(pady=20)
+periodo_entrada.pack(pady=20)
 
 # Botão de calcular
 botao = ctk.CTkButton(app,
                         text="Calcular",
-                        command=lambda: print("Calculando..."),
+                        command=calcular,
                         corner_radius= 10,
                         fg_color="#43A27D",
                         hover_color="#4B9181",
@@ -86,15 +100,15 @@ botao = ctk.CTkButton(app,
 botao.pack(pady=30)
 
 # Resultado
-resultado_label = ctk.CTkLabel(app,
+resultado_titulo = ctk.CTkLabel(app,
                                text="Resultados",
                                font=('Arial', 30, 'bold'),
                                text_color="#43A27D")
-resultado_label.pack(pady=20)
+resultado_titulo.pack(pady=20)
 
 resultado = ctk.CTkLabel(app,
-                         text="Valor Final: R$ 0,00\nJuros: R$ 0,00",
-                         font=('Arial', 30),
+                        text="",
+                        font=('Arial', 30),
                         text_color="#0F0F0F")
 resultado.pack(pady=20)
 
