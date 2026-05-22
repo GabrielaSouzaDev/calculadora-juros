@@ -36,11 +36,17 @@ calculadora-juros/
 
 ├── calculadora.py
 
+├── juros-composto.py
+
+├── juros-simples.py
+
 ├── assets/
 
-│   ├── icon.ico
+│   ├── ico/
 
 │   └── imagens/
+
+├──  LISENSE
 
 └── README.md
 
