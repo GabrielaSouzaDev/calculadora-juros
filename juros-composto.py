@@ -12,9 +12,9 @@ valorFinal = valorInicial * (1 + (taxaJuros / 100)) ** periodo
 jurosCompostos = valorFinal - valorInicial
 
 # Saída de dados
-print("================================")
+print("==================================")
 print("  Calculadora de Juros Compostos  ")
-print("================================")
+print("==================================")
 print(f"Valor investido: R$ {valorInicial:.2f}")
 print(f"Juros Compostos: R$ {jurosCompostos:.2f}")
 print(f"Valor Final: R$ {valorFinal:.2f}")
