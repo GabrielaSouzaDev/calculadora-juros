@@ -13,7 +13,7 @@ app.iconbitmap("assets/ico/calculadora.ico")
 app.resizable(False, False) # impedir que o usuário redimensione a janela
 
 # Lógica da calculadora
-def calcular():
+def jurosSimples():
     valorInvestido = float(valorInicial_entrada.get())
     taxaJuros = float(taxaJuros_entrada.get())
     periodo = int(periodo_entrada.get())
@@ -90,7 +90,7 @@ periodo_entrada.pack(pady=20)
 # Botão de calcular
 botao = ctk.CTkButton(app,
                         text="Calcular",
-                        command=calcular,
+                        command=jurosSimples,
                         corner_radius= 10,
                         fg_color="#43A27D",
                         hover_color="#4B9181",
@@ -108,7 +108,7 @@ resultado_titulo.pack(pady=20)
 
 resultado = ctk.CTkLabel(app,
                         text="",
-                        font=('Arial', 30),
+                        font=('Arial', 30, 'bold'),
                         text_color="#0F0F0F")
 resultado.pack(pady=20)
 
