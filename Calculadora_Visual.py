@@ -1,3 +1,7 @@
+# Autor: Gabriela Souza
+# Projeto: Calculadora Simples
+# Data: 2026-05-21
+
 import customtkinter as ctk
 
 
