@@ -127,18 +127,31 @@ Conforme o projeto crescer, recomenda-se modularizar:
 calculadora-juros/
 
 │
+
 ├── modules/
+
 │   ├── juros_simples.py
+
 │   ├── juros_compostos.py
+
 │   ├── parcelas.py
+
 │   └── utils.py
+
 │
+
 ├── assets/
+
 │
+
 ├── themes/
+
 │
+
 ├── calculadora.py
+
 │
+
 └── README.md
 
 ## 💡 Melhorias Futuras
