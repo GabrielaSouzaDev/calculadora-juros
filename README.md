@@ -1,10 +1,10 @@
-# 💰 Calculadora de Juros
+# Calculadora de Juros
 
 Uma aplicação simples e intuitiva para cálculo de juros desenvolvida em Python com interface gráfica moderna utilizando CustomTkinter.
 
 O projeto foi criado com foco em aprendizado, organização visual e praticidade, permitindo realizar cálculos financeiros básicos de forma rápida e eficiente.
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
 A Calculadora de Juros é uma ferramenta desenvolvida para auxiliar no cálculo de:
 
@@ -21,34 +21,32 @@ Criação de interfaces gráficas
 Estruturação de projetos
 Organização de código
 
-## 🚀 Objetivo
+##  Objetivo
 
 O objetivo principal do projeto é fornecer uma aplicação prática para cálculos financeiros enquanto aprimora conhecimentos em:
 
-Python
-Interfaces gráficas
-Lógica matemática e de programação
+- Python
+- Interfaces gráficas
+- Lógica matemática e de programação
+- Juros Simples
+- Juros Compostos
+- Alternância entre tema claro e escuro
+- Interface moderna e intuitiva
 
-## 🧠 Estrutura do Projeto
+## Estrutura do Projeto
+````
 calculadora-juros/
-
 │
-
-├── calculadora.py
-
-├── juros-composto.py
-
-├── juros-simples.py
-
+├── calculadora-juros.py
 ├── assets/
-
 │   ├── ico/
-
 │   └── imagens/
-
 ├──  LISENSE
-
 └── README.md
+`````
+
+## Demonstração
+
 
 ## 📂 Explicação dos Arquivos
 calculadora.py
