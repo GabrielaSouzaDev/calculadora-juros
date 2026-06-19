@@ -46,6 +46,8 @@ calculadora-juros/
 `````
 
 ## Demonstração
+<img width="498" height="829" alt="calculadora-simples" src="https://github.com/user-attachments/assets/77f69a31-0de3-46c5-8752-fd1d4b50e3ab" />
+<img width="500" height="830" alt="calculadora-composto" src="https://github.com/user-attachments/assets/ffa1e819-8e1d-4694-b316-59b5357d5b7a" />
 
 
 ## Explicação dos Arquivos
