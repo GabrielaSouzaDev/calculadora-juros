@@ -48,7 +48,7 @@ calculadora-juros/
 ## Demonstração
 
 
-## 📂 Explicação dos Arquivos
+## Explicação dos Arquivos
 calculadora.py
 
 Arquivo principal da aplicação.
@@ -63,26 +63,62 @@ Responsável por:
 
 - Exibição dos resultados.
 
-## ⚙️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 O projeto utiliza:
 
-Python 3
-CustomTkinter
+- Python 3
+- CustomTkinter
 
-## 🎨 Interface
+## Funcionalidades
+Juros Simples
+
+Utiliza a fórmula:
+
+J = C × i × t
+
+Onde:
+
+J = Juros
+C = Capital
+i = Taxa
+t = Tempo
+Juros Compostos
+
+Utiliza a fórmula:
+
+M = C × (1+i)^t
+
+Onde:
+
+M = Montante
+
+C = Capital
+
+i = Taxa
+
+t = Tempo
+
+## Temas
+
+O projeto possui:
+
+Tema Claro ☀️
+
+Tema Escuro 🌙
+
+Podendo alternar com apenas um clique.
+
+## Interface
 
 A interface foi desenvolvida com foco em:
 
 - Design moderno,
-
 - Cores suaves,
-
 - Boa experiência visual,
-
 - Facilidade de uso.
 
-## 📦 Instalação
+## Instalação
 
 Clone o repositório:
 
@@ -98,13 +134,28 @@ pip install python3
 pip install customtkinter
 
 
-## ▶️ Como Executar
+## Como executar
 
-Execute o arquivo principal:
+Clone o projeto:
+````
+git clone https://github.com/seuusuario/calculadora-juros
+````
 
-Calculadora_Visual.py
+Entre na pasta:
+````
+cd calculadora-juros
+````
 
-## 🔧 Funcionalidades
+Instale as dependências:
+````
+pip install customtkinter pillow
+````
+
+Execute:
+````
+python main.py
+````
+## Funcionalidades
 
 O sistema pode permitir:
 
@@ -118,7 +169,7 @@ O sistema pode permitir:
 
 - Processamento instantâneo.
 
-## 🏗️ Estrutura Recomendada para Evolução
+## Estrutura Recomendada para Evolução
 
 Conforme o projeto crescer, recomenda-se modularizar:
 
@@ -152,33 +203,27 @@ calculadora-juros/
 
 └── README.md
 
-## 💡 Melhorias Futuras
-- Histórico de cálculos,
+## Melhorias Futuras
 
--Exportação em PDF,
-
--Tema claro/escuro,
-
--Gráficos financeiros,
-
--Conversão automática de moedas,
-
--Responsividade aprimorada,
-
--Mais tipos de cálculos financeiros.
+- Histórico de cálculos
+- Exportação em PDF
+- Tema claro/escuro
+- Gráficos financeiros
+- Conversão automática de moedas
+- Responsividade aprimorada
+- Mais tipos de cálculos financeiros
 
 
-## 👩‍💻 Autor
+## Autor
 
 Desenvolvido por Gabriela Souza
 
-## 📄 Licença
+## Licença
 
 Este projeto pode ser utilizado para:
 
-Estudos
-Aprendizado
-Portfólio
-Automação pessoal
+- Estudos
+- Aprendizado
+- Portfólio
 
 Sinta-se livre para modificar e evoluir o projeto.
